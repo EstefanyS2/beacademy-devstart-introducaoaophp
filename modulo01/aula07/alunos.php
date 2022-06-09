@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<thead>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name=" keymords " content="php, informacoes basicas, html " />
+    <meta name=" descption " content="Tabela com informacoes basicas com html e php " />
 <?php
 
 $a1 = [
@@ -83,3 +91,4 @@ $alunos = [
     </tbody>
 </table>
 </div>
+</html>
