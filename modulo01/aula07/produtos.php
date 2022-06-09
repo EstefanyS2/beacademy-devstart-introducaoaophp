@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<thead>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name=" keymords " content="php, informacoes basicas, html " />
+    <meta name=" descption " content="Tabela com informacoes basicas com html e php " />
+
+<?php
+
+$prod1 = [
+    'nome' => 'Vestido',
+    'preco' => '93.90',
+    'descricao' => 'Vestidos Acabamento de babados Pescoço de sobrepeliz Amarrar',
+    'imagem' => '<img src="https://img.ltwebstatic.com/images3_pi/2022/03/08/16467040572f1a16861ff1a2659cf5ad1d4361825e_thumbnail_100x.webp" alt="">',
+];
+
+$prod2 = [
+    'nome' => 'Sandalia salto', 
+    'preco' => 146.99,
+    'descricao' => 'Slingbacks Strass Simples Glamour',
+    'imagem' => '<img src="https://img.ltwebstatic.com/images3_pi/2022/03/25/16481977881b7254f89e7cd079dad91c2b70512fcb_thumbnail_100x.webp" alt="https://br.shein.com/Rhinestone-Decor-Stiletto-Heeled-Slingback-Sandals-p-10191560-cat-1751.html?src_identifier=st%3D4%60sc%3DSandalia%20Salto%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1654635734973&scici=Search~~SuggestionSearch~~1~~Sandalia_20Salto~~SPcSearchWordsSuggest~~0">',
+];
+
+$prod3 = [
+    'nome' => 'Calca',
+    'preco' => '135.95',
+    'descricao' => 'Botão Corte Fora Bolso Rasgado Zíper Simples Jeans',
+    'imagem' => '<img src="https://img.ltwebstatic.com/images3_pi/2021/08/27/1630030936b8a351ad88e9b7935a2b78b305229255_thumbnail_100x.webp" alt="https://br.shein.com/High-Waist-Cut-Out-Ripped-Frayed-Wide-Leg-Jeans-p-3382564-cat-1934.html?src_identifier=st%3D2%60sc%3Dcalca%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_search1654729819290&scici=Search~~EditSearch~~1~~calca~~~~0"> ',
+];
+
+$prod4 = [
+    'nome' => 'Bolsa',
+    'preco' => '54.90',
+    'descricao' => 'Bolsa acochoada com alças de corrente',
+    'imagem' => '<img src="https://img.ltwebstatic.com/images3_pi/2020/06/12/1591932364389057a67d5cfaf1cc2a77ab9fff7b99_thumbnail_100x.webp" alt="https://br.shein.com/Mini-Quilted-Chain-Shoulder-Bag-p-948911-cat-1764.html?src_identifier=st%3D5%60sc%3Dbolsa%60sr%3D0%60ps%3D4&src_module=search&src_tab_page_id=page_search1654731089687&scici=Search~~RecentSearch~~1~~bolsa~~~~0">'
+];
+
+$prod5 = [
+    'nome' => 'Blusa',
+    'preco' => '59.90',
+    'descricao' => 'Blusa basica em algodao com manga longa preta',
+    'imagem' => '<img src"https://img.lojasrenner.com.br/item/558510350/zoom/1.jpg" alt="">',
+];
+
+$produto = [
+    $prod1,
+    $prod2,
+    $prod3,
+    $prod4,
+    $prod5,
+];
+
+?>
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<div class="container">
+    <h1 class="mt-5"> Loja </h1>
+    <hr>
+<table class="table table-houver table-striped mt-5 ">
+<thead class="table-dark table-striped mt-5"> 
+    <tr>
+        <th>Nome</th>
+        <th>Preco</th>
+        <th>Descricao</th>
+        <th>Imagem</th>
+    </tr>
+</thead>
+<tbody>
+    <?php
+    foreach ($produto as $cadaProduto) {
+        echo "<tr>";
+          echo '<td>' . $cadaProduto['nome'] . "</td>";
+          echo '<td>' . $cadaProduto['preco'] . "</td>";
+          echo '<td>' . $cadaProduto['descricao'] . "</td>";
+          echo '<td>' . $cadaProduto['imagem'] . "</td>";
+        echo '</tr>';
+    }
+    ?>
+</tbody>
+</table>
+</div>
+</html>
