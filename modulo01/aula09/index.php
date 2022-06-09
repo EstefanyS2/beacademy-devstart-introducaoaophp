@@ -3,24 +3,15 @@ $url = $_SERVER['REQUEST_URI'];
 
 include 'telas/head.php';
 include 'telas/menu.php';
+include 'acoes.php';
 
-if ($url === '/') {
-   
-    include 'telas/home.php';
-
-}  elseif ($url === '/login') {
-  
-    include 'telas/login.php';
-
-} elseif ($url === '/cadastro') {
-     
-    include 'telas/cadastro.php';
-
-} else {
-    
-    include 'telas/404.php';
-
-}
-
+match ($url) {
+    '/' => home(),
+    '/login' => login(),
+    '/cadastro' => cadastro(),
+    '/listar' => listar(),
+    '/relatorio' => relatorio(),
+    default => erro404(),
+};
 
 include 'telas/footer.php';
