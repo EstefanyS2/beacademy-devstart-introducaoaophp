@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 function soma($n1, $n2) {
     return $n1 + $n2;
 }
