@@ -1,6 +1,6 @@
 <h1>Pagina Inicial</h1>
 <hr>
 
-<div>
+<div class="pink">
     Bem vindo a pagina inicial
 </div>
