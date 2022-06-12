@@ -1,8 +1,8 @@
 <h1>Listar Contatos</h1>
 
-<table class="table table-hover table-striped">
-    <thead bgcolor="pink">
-        <tr class="active">
+<table class="table table-hover table-striped" border=2>
+    <thead class="table table-dark">
+        <tr>
             <th>Nome</th>
             <th>Email</th>
             <th>Telefone</th>
