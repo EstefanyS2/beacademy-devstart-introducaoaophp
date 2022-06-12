@@ -1,11 +1,12 @@
 <h1>Listar Contatos</h1>
 
 <table class="table table-hover table-striped" border=2>
-    <thead class="table table-dark">
+    <thead class="table-dark">
         <tr>
             <th>Nome</th>
             <th>Email</th>
             <th>Telefone</th>
+            <th>Ações</th>
         </tr>
     </thead>
 <tbody>
@@ -16,9 +17,9 @@
       echo '<td>' . $partes[0] . '</td>';
       echo '<td>' . $partes[1] . '</td>';
       echo '<td>' . $partes[2] . '</td>';
-      echo '<td>' . $partes[3] . '</td>';
-      echo '<td>' . $partes[4] . '</td>';
-      echo '<td>' . $partes[5] . '</td>';
+      echo "<td>
+        <a href='#' class='btn btn-info btn-sm'>Excluir</a>
+     </tr>";
    echo '</tr>';
 }
 ?>
