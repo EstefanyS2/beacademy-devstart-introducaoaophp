@@ -13,18 +13,18 @@
      if ($_POST) {
 
         if (isset($_POST['subtracao'])) {
-         echo $_POST['1'] - $_POST['2'];
+         echo $_POST['n1'] - $_POST['n2'];
         }
 
         if (isset($_POST['soma'])) {
-            echo $_POST['1'] + $_POST['2'];
+            echo $_POST['n1'] + $_POST['n2'];
         }
         if (isset($_POST['multiplicacao'])) {
-            echo $_POST['1'] * $_POST['2'];
+            echo $_POST['n1'] * $_POST['n2'];
         }
         if (isset($_POST['divisao'])) {
-            echo $_POST['1'] / $_POST['2'];
+            echo $_POST['n1'] / $_POST['n2'];
         }
-         var_dump($_POST);
+         
     }
 ?>

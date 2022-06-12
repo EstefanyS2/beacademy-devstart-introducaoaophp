@@ -8,6 +8,6 @@
 
 <?php
    if ($_POST) {
-       echo "oi " .$_POST['nome'];
+       echo "Oi " .$_POST['nome'];
    }
    ?>

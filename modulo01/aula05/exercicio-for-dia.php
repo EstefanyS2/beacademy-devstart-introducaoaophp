@@ -1,5 +1,5 @@
 <select>
-    <option selected> -- Selecione o mes --</option>
+    <option selected>Selecione o me</option>
     <?php
 
 
@@ -12,7 +12,7 @@
 <br/>
 
 <select>
-    <option selected> -- Selecione o dia --</option>
+    <option selected>Selecione o dia</option>
     <?php
 
 
