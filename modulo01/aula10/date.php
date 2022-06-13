@@ -1,4 +1,4 @@
 <?php
-$dia = date('dia');
+$dia = date('d');
 
 echo $dia;
