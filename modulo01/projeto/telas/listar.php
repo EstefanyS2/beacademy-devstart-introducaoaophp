@@ -10,7 +10,7 @@
         </tr>
     </thead>
 <tbody>
-    <?php foreach ($contatos as $cadaContato) {
+    <?php foreach ($contatos as $posicao => $cadaContato) {
     $partes = explode(';', $cadaContato);
 
    echo '<tr>';
@@ -18,7 +18,8 @@
       echo '<td>' . $partes[1] . '</td>';
       echo '<td>' . $partes[2] . '</td>';
       echo "<td>
-        <a href='#' class='btn btn-info btn-sm'>Excluir</a>
+        <a href='/excluir?id={$posicao}' class='btn btn-info btn-sm'>Excluir</a>
+        <a href='/excluir?id={$posicao}' class='btn btn-success btn-sm'>Editar</a>
      </tr>";
    echo '</tr>';
 }
