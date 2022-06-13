@@ -6,4 +6,4 @@
 
 ## Screenshots
 
-![loja](
+![loja](https://github.com/EstefanyS2/beacademy-devstart-introducaoaophp/blob/main/img/img-loja.png)
